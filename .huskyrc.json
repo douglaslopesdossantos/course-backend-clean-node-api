@@ -1,7 +1,2 @@
-{
-  "husky": {
-    "hooks" : {
-      "pre-commit": "npm run lint:fix && npx lint-staged"
-    }
-  }
-}
+{ "hooks": { "pre-commit": "lint-staged " } }
+

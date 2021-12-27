@@ -7,6 +7,13 @@
     "test": "jest --passWithNoTests --watch",
     "test:staged": "jest --passWithNoTests"
   },
+  "lint-staged": {
+    "./src/*.{js,jsx,ts,tsx}": [
+      "npm run format",
+      "npm run lint",
+      "git add"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/douglaslopesdossantos/course-backend-clean-node-api.git"
